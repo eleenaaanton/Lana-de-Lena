@@ -571,6 +571,15 @@ function pedido() {
 
 }
 
+
+  if (typeof carrito !== "undefined") {
+    carrito.push({nombre: detalle, precio: precio});
+  }
+
+  if (typeof actualizarCarrito === "function") {
+    actualizarCarrito();
+  }
+}
 </script>
 
 </body>
