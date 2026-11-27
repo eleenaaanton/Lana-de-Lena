@@ -278,6 +278,7 @@ footer {
     <option>Verdes</option>
     <option>Azules</option>
     <option>Amarillos</option>
+    <option>Naranjas</option>
     <option>Marrones</option>
     <option>Negros</option>
   </select>
@@ -295,13 +296,52 @@ footer {
 
       <p>Suaves, mulliditos y disponibles en diferentes colores.</p>
 
-      <div class="price">5 €</div>
+      <div class="price">10 €</div>
 
       <button class="btn" onclick="add('Coletero',5)">Añadir</button>
 
     </article>
 
     <article class="product">
+        <p>Gatitos personalizados hechos a mano. Elige el modelo, los colores y el color de los ojos.</p>
+
+  <label>Modelo:</label>
+  <select id="modelo-gato">
+    <option>Un solo color</option>
+    <option>Gato siamés</option>
+    <option>Cuerpo de un color y patas y cola de otro</option>
+  </select>
+
+  <label>Color principal:</label>
+  <select id="color-gato">
+    <option>Blanco</option>
+    <option>Negro</option>
+    <option>Gris</option>
+    <option>Naranja</option>
+  </select>
+
+  <label>Color de patas y cola (si corresponde):</label>
+  <select id="color-extremidades">
+    <option>Blanco</option>
+    <option>Negro</option>
+    <option>Gris</option>
+    <option>Naranja</option>
+  </select>
+
+  <label>Color de ojos:</label>
+  <select id="ojos-gato">
+    <option>Verdes</option>
+    <option>Azules</option>
+    <option>Amarillos</option>
+    <option>Naranjas</option>
+    <option>Marrones</option>
+    <option>Negros</option>
+  </select>
+
+  <p>Precio: 1 Color: 10 €, 2 Colores: 12 €, 3 Colores o más: 15€</p>
+  <button onclick="agregarAlCarrito('Peluche de gato personalizado', 6)">Añadir al pedido</button>
+</div>
+
 
       <img src="peluches.jpg" alt="Peluches de crochet">
 
